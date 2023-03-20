@@ -20,9 +20,10 @@ FORMS += \
 
 DISTFILES += \
     assets/lock_icon.png \
-	assets/theme_images/checkbox.png \
-	assets/theme_images/down_arrow.png \
-	assets/theme_images/handle.png \
+    assets/theme_images/checkbox.png \
+    assets/theme_images/down_arrow.png \
+    assets/theme_images/handle.png \
+    assets/fonts/TitilliumWeb-Regular.ttf \
     stylesheets/main.qss
 
 RESOURCES += \

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>576</width>
-    <height>524</height>
+    <width>521</width>
+    <height>564</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -17,7 +17,10 @@
    </sizepolicy>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Strong Password Generator</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 9pt &quot;Titillium Web&quot;;</string>
   </property>
   <property name="locale">
    <locale language="English" country="UnitedStates"/>
@@ -32,13 +35,16 @@
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>20</x>
       <y>10</y>
-      <width>531</width>
+      <width>441</width>
       <height>66</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,1">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>6</number>
+     </property>
      <property name="sizeConstraint">
       <enum>QLayout::SetDefaultConstraint</enum>
      </property>
@@ -69,14 +75,8 @@
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
-       <property name="font">
-        <font>
-         <family>Titillium Web</family>
-         <pointsize>26</pointsize>
-        </font>
-       </property>
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">font: 20pt &quot;Titillium Web&quot;;</string>
        </property>
        <property name="text">
         <string>Strong Password Generator</string>
@@ -88,17 +88,23 @@
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>100</y>
-      <width>531</width>
-      <height>251</height>
+      <x>80</x>
+      <y>80</y>
+      <width>341</width>
+      <height>313</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string>font: 11pt &quot;Titillium Web&quot;;</string>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
       <layout class="QHBoxLayout" name="length_layout">
        <item>
         <widget class="QLabel" name="lb_pslength">
+         <property name="styleSheet">
+          <string>font: 11pt &quot;Titillium Web&quot;;</string>
+         </property>
          <property name="text">
           <string>Password Length:</string>
          </property>
@@ -111,6 +117,9 @@
            <width>92</width>
            <height>16777215</height>
           </size>
+         </property>
+         <property name="styleSheet">
+          <string>font: 11pt &quot;Titillium Web&quot;;</string>
          </property>
          <item>
           <property name="text">
@@ -165,6 +174,9 @@
       <layout class="QHBoxLayout" name="symbols_layout">
        <item>
         <widget class="QLabel" name="lb_pssymbols">
+         <property name="styleSheet">
+          <string>font: 11pt &quot;Titillium Web&quot;;</string>
+         </property>
          <property name="text">
           <string>Use Symbols:</string>
          </property>
@@ -178,6 +190,9 @@
            <height>16777215</height>
           </size>
          </property>
+         <property name="styleSheet">
+          <string>font: 11pt &quot;Titillium Web&quot;;</string>
+         </property>
          <property name="text">
           <string>(@#$ etc)</string>
          </property>
@@ -189,6 +204,9 @@
       <layout class="QHBoxLayout" name="numbers_layout">
        <item>
         <widget class="QLabel" name="lb_psnumbers">
+         <property name="styleSheet">
+          <string>font: 11pt &quot;Titillium Web&quot;;</string>
+         </property>
          <property name="text">
           <string>Use Numbers:</string>
          </property>
@@ -202,8 +220,11 @@
            <height>16777215</height>
           </size>
          </property>
+         <property name="styleSheet">
+          <string>font: 11pt &quot;Titillium Web&quot;;</string>
+         </property>
          <property name="text">
-          <string/>
+          <string>123456</string>
          </property>
         </widget>
        </item>
@@ -213,6 +234,9 @@
       <layout class="QHBoxLayout" name="uppercase_layout">
        <item>
         <widget class="QLabel" name="lb_psuppercase">
+         <property name="styleSheet">
+          <string>font: 11pt &quot;Titillium Web&quot;;</string>
+         </property>
          <property name="text">
           <string>Use Uppercase characters:</string>
          </property>
@@ -226,6 +250,9 @@
            <height>16777215</height>
           </size>
          </property>
+         <property name="styleSheet">
+          <string>font: 11pt &quot;Titillium Web&quot;;</string>
+         </property>
          <property name="text">
           <string>ABCDEF</string>
          </property>
@@ -237,6 +264,9 @@
       <layout class="QHBoxLayout" name="lowercase_layout">
        <item>
         <widget class="QLabel" name="lb_pslowercase">
+         <property name="styleSheet">
+          <string>font: 11pt &quot;Titillium Web&quot;;</string>
+         </property>
          <property name="text">
           <string>Use Lowercase characters:</string>
          </property>
@@ -250,8 +280,11 @@
            <height>16777215</height>
           </size>
          </property>
+         <property name="styleSheet">
+          <string>font: 11pt &quot;Titillium Web&quot;;</string>
+         </property>
          <property name="text">
-          <string>CheckBox</string>
+          <string>abcdef</string>
          </property>
         </widget>
        </item>
@@ -259,83 +292,141 @@
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="horizontalLayoutWidget_6">
+   <widget class="QWidget" name="horizontalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>390</y>
-      <width>531</width>
-      <height>41</height>
+      <x>80</x>
+      <y>380</y>
+      <width>341</width>
+      <height>51</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_2">
-     <property name="spacing">
-      <number>1</number>
-     </property>
+    <property name="styleSheet">
+     <string>font: 11pt &quot;Titillium Web&quot;;</string>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
      <item>
-      <widget class="QLabel" name="label_9">
+      <widget class="QPushButton" name="pushButton_2">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
-       <property name="maximumSize">
+       <property name="minimumSize">
         <size>
-         <width>16777215</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="text">
-        <string>Generated Password:</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPlainTextEdit" name="plainTextEdit">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>28</height>
-        </size>
-       </property>
-       <property name="readOnly">
-        <bool>true</bool>
-       </property>
-       <property name="backgroundVisible">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>30</height>
+         <width>0</width>
+         <height>32</height>
         </size>
        </property>
        <property name="styleSheet">
-        <string notr="true">margin-left: 38px;</string>
+        <string>font: 11pt &quot;Titillium Web&quot;;</string>
        </property>
        <property name="text">
-        <string>Copy</string>
+        <string>Generate</string>
        </property>
       </widget>
      </item>
     </layout>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>440</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>112</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 11pt &quot;Titillium Web&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Password:</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>440</y>
+      <width>148</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>148</width>
+      <height>24</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string>font: 11pt &quot;Titillium Web&quot;;</string>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+    <property name="backgroundVisible">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>440</y>
+      <width>48</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>48</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 11pt &quot;Titillium Web&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Copy</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -343,8 +434,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>576</width>
-     <height>21</height>
+     <width>521</width>
+     <height>24</height>
     </rect>
    </property>
   </widget>
