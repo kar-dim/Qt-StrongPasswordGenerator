@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
 
     MainWindow w;
-    w.setFixedSize(QSize(500, 500));
+    w.setFixedSize(QSize(420, 521));
     // Load the application style
     QFile styleFile( ":/stylesheets/main.qss" );
     styleFile.open( QFile::ReadOnly );

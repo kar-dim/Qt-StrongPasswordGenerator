@@ -14,9 +14,18 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-
+    static constexpr int LOWER_CASE = 1;
+    static constexpr int UPPER_CASE = 2;
+    static constexpr int SYMBOLS = 3;
+    static constexpr int NUMBERS = 4;
+    static const QList<QChar> LOWER_CASE_LIST;
+    static const QList<QChar> UPPER_CASE_LIST;
+    static const QList<QChar> SYMBOLS_LIST;
+    static const QList<QChar> NUMBERS_LIST;
 private slots:
-    void on_pushButton_clicked();
+    void on_btn_generate_clicked();
+
+    void on_btn_copy_clicked();
 
 private:
     Ui::MainWindow *ui;
