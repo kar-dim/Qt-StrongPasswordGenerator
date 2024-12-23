@@ -45,7 +45,7 @@ void MainWindow::onGenerateClick()
     if (numbers) availableCharTypes.append(NUMBER);
 
     QString pwd;
-    const auto randomGenerator = QRandomGenerator::global();
+    QRandomGenerator* randomGenerator = QRandomGenerator::global();
     //construct the password
     for (int i = 0; i < pwdLen; i++)
     {
