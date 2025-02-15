@@ -12,6 +12,10 @@ A simple, user-friendly GUI application built with Qt to generate secure random 
 - **Password Length Selection**: Choose a length between **8** and **16** characters.
 - **Copy to Clipboard**: Easily copy the generated password for use.
 
+## Build
+
+The project is setup as a **Qt Creator** project and can be easily imported as such.
+
 ## Usage
 
 1. Open the application.
